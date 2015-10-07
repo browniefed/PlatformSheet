@@ -11,11 +11,13 @@ var styles = PlatformSheet.create({
     baseStyle: {
         backgroundColor: '#FFF'
     },
-    androidbaseStyle = {
+    android.baseStyle = {
         backgroundColor: '#000'
     },
-    iosbaseStyle = {
+    ios.baseStyle = {
         backgroundColor: '#DDD'
     }
 
 })
+```
+

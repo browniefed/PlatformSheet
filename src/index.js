@@ -4,7 +4,10 @@ import Platform from "platform";
 const ANDROID = 'android';
 const IOS = 'ios';
 
-var isPlatformStyle = (stylName) => styleName.indexOf(ANDROID) === 0 || styleName.indexOf(IOS) === 0;
+const ANDROIDSTYLE = ANDROID + '.';
+const IOSSTYLE = IOS + '.';
+
+var isPlatformStyle = (stylName) => styleName.indexOf(ANDROIDSTYLE) === 0 || styleName.indexOf(IOSSTYLE) === 0;
 
 var mergeStyle = (currentStyle = {}, addStyle) => {
     //If no transform exists then just spread, or no overrides form addStyle
@@ -35,8 +38,8 @@ var mergeStyle = (currentStyle = {}, addStyle) => {
 
 
 var getBaseStyleName = (styleName) => {
-    if (styleName.indexOf(ANDROID) === 0) return styleName.substr(ANDROID.length);
-    if (styleName.indexOf(IOS) === 0) return styleName.substr(IOS.length);
+    if (styleName.indexOf(ANDROIDSTYLE) === 0) return styleName.substr(ANDROIDSTYLE.length);
+    if (styleName.indexOf(IOSSTYLE) return styleName.substr(IOSSTYLE.length);
     return styleName;
 }
 
@@ -44,8 +47,8 @@ export default PlatformSheet = {
     create(styles = {}) {
         //Setup
         let platformStyles = {};
-        let targetPlatform = Platform.OS;
-        let ignorePlatform = targetPlatform === ANDROID ? IOS : ANDROID;
+        let targetPlatform = Platform.OS === ANDROID ? ANDROIDSTYLE : IOSSTYLE;
+        let ignorePlatform = targetPlatform === ANDROID ? IOSSTYLE : ANDROIDSTYLE;
 
         //This could maybe be faster if we mutate, next version?
 
