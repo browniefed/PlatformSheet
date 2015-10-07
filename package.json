@@ -1,0 +1,29 @@
+{
+  "name": "platformsheet",
+  "version": "1.0.0",
+  "description": "Colocate React Native styles",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/index.js --out-file build/index.js"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Jason Brown <browniefed@gmail.com> (http://browniefed.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "react-native": "^0.11.4"
+  },
+  "dependencies": {
+    "react-native": "^0.11.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browniefed/PlatformSheet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/browniefed/PlatformSheet/issues"
+  },
+  "homepage": "https://github.com/browniefed/PlatformSheet#readme"
+}
