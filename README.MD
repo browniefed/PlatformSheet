@@ -9,7 +9,8 @@ Allows you to colocate styles for both IOS an Android.
 var styles = PlatformSheet.create({
     
     baseStyle: {
-        backgroundColor: '#FFF'
+        height: 100,
+        width: 100        
     },
     android.baseStyle = {
         backgroundColor: '#000'
@@ -20,4 +21,3 @@ var styles = PlatformSheet.create({
 
 })
 ```
-
